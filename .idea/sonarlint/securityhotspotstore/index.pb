@@ -5,3 +5,17 @@ p
 @redis/src/main/java/com/nhh2003/redis/LearnresdiApplication.java,c\6\c6a64b60d288e45cc37dfe165b91be0c2a745a67
 j
 :src/main/java/com/nhh2003/redis/LearnresdiApplication.java,a\9\a961f082553bd5c2de2ff2cf893aeaef85256a4a
+a
+1src/main/java/com/nhh2003/redis/package-info.java,a\1\a1b2ed6f61793f64f30191c1cd69e62175e1c75a
+c
+3src/main/java/com/nhh2003/redis/entity/Product.java,e\4\e4be6ead23503bd8aa4c0fded237cd0567b34854
+m
+=src/main/java/com/nhh2003/redis/service/BaseRedisService.java,1\2\1235c6aeb8583141bab15d01ebb66efcdb2ffe4c
+q
+Asrc/main/java/com/nhh2003/redis/service/BaseRedisServiceImpl.java,4\4\448e38d73bf7a5b91d340a5e64294512bd45e241
+o
+?src/main/java/com/nhh2003/redis/controller/RedisController.java,1\7\17ac31814a891cd3d390d8129ac38bdeadc555fa
+n
+>src/main/java/com/nhh2003/redis/config/RedisConfiguration.java,2\b\2bafe8a0de0792c99a9c94211f3c6ada39f0dc3c
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
