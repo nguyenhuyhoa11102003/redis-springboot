@@ -14,16 +14,16 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 @Configuration
 @EnableRedisRepositories
 public class RedisConfiguration {
-
-    @Value("${redis.port}")
+    @Value("${spring.data.redis.port}")
     private Integer redisPort;
-
-
-    @Value("${redis.host}")
+    @Value("${spring.data.redis.host}")
     private String redisHost;
+
+
 
     @Bean
     public JedisConnectionFactory connectionFactory() {
+        // Tạo Standalone Connection tới Redis
         RedisStandaloneConfiguration configuration = new RedisStandaloneConfiguration();
         configuration.setHostName(redisHost);
         configuration.setPort(redisPort);
@@ -32,7 +32,7 @@ public class RedisConfiguration {
 
 
     @Bean
-    public RedisTemplate<String, Object> template() {
+    public RedisTemplate<String, Object> redisTemplate() {
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(connectionFactory());
         redisTemplate.setKeySerializer(new StringRedisSerializer());

@@ -1,10 +1,12 @@
 package com.nhh2003.redis.service;
 
 import com.nhh2003.redis.entity.Product;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
 
 public interface BaseRedisService {
     void set(String key, String value);

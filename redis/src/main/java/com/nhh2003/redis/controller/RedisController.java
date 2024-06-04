@@ -3,17 +3,21 @@ package com.nhh2003.redis.controller;
 
 import com.nhh2003.redis.entity.Product;
 import com.nhh2003.redis.service.BaseRedisService;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/redis")
-@AllArgsConstructor
 public class RedisController {
     private final BaseRedisService redisService;
 
+
+    @Autowired
+    public RedisController(BaseRedisService redisService) {
+        this.redisService = redisService;
+    }
 
     @PostMapping
     public Product save(@RequestBody Product product) {
